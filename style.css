@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  /*outline: 1px dotted green;*/
+}
+
+* {
+  font-family: Readex Pro;
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.arrow1 {
+  margin-right: -15px;
+  z-index: 10;
+}
+.arrow2 {
+  margin-left: -15px;
+  z-index: 10;
+}
+.gallerysc {
+  transition: scroll 0.5s ease;
+}
+.gallerysc::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 1370px) {
+  .gallerysc {
+    width: 1200px;
+  }
+}
+@media (max-width: 1100px) {
+  .gallerysc {
+    width: 840px;
+  }
+}
+@media (max-width: 875px) {
+  .gallerysc {
+    display: none !important;
+  }
+  .arrow1 {
+    display: none;
+  }
+  .arrow2 {
+    display: none;
+  }
+}
+@media (max-width: 1280px) {
+  .watchw {
+    width: 600px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .watchfix {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .watchw {
+    width: auto;
+  }
+}
+@media (max-width: 769px) {
+  .fixtxtm {
+    font-size: 32px;
+  }
+  .fixtxtp {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1225px) {
+  .ideasfix {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .urlfix {
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 1100px) {
+  .cardfix {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .cardbgfix {
+    width: 80% !important;
+  }
+}
+@media (max-width: 1023px) {
+  .fixcards2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardbgfix2 {
+    width: 80% !important;
+  }
+}
+@media (max-width: 1023px) {
+  #menu-items {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  #menu-items {
+    display: flex;
+  }
+}
+@media (max-width: 660px) {
+  .vertgalfix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .vertgal {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: none;
+    width: 290px;
+  }
+  .watchfix {
+    display: flex;
+    flex-direction: column;
+  }
+  .watchw {
+    flex-direction: column;
+  }
+}
